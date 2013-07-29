@@ -1,0 +1,105 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "PlaceDetail",
+        "designer|userClassName": "PlaceDetail"
+    },
+    "designerId": "3b79634f-2b9a-4bb9-896a-13b415295fb7",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Details"
+            },
+            "designerId": "a5f222be-f799-4ba4-bd2a-8ca00bdfdb07",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Place",
+                        "name": "name"
+                    },
+                    "designerId": "ade95789-5bdd-4d2f-b375-384a7f884978"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Location",
+                        "name": "location"
+                    },
+                    "designerId": "8649c10a-03d5-4927-8f3f-633506a33a9e"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Hidden",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "lat",
+                "name": "lat"
+            },
+            "designerId": "a4cb3892-ab71-44c9-9140-6b5e1d8f564e"
+        },
+        {
+            "type": "Ext.field.Hidden",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "lng",
+                "name": "lng"
+            },
+            "designerId": "ec961a53-e194-476d-bb94-4575dbf97b46"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "action": "ViewMap",
+                "centered": false,
+                "margin": "20px",
+                "ui": "forward",
+                "width": null,
+                "text": "View on Map"
+            },
+            "designerId": "13b9bd06-564a-4c31-9c98-ff2ffb9338aa",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "action",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

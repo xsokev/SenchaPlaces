@@ -1,0 +1,111 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Place"
+    },
+    "designerId": "a13b8e35-6610-4956-b2ea-437bd437cdfe",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainView",
+                "selector": "#MainView"
+            },
+            "designerId": "1d70f13e-928f-43ac-bb64-98472582bd21"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "placeList",
+                "selector": "#PlaceList"
+            },
+            "designerId": "9c6d4539-5c73-467b-9c7a-f721ad49722f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "placeDetail",
+                "selector": "#PlaceDetail"
+            },
+            "designerId": "072dd928-67e6-450c-a289-d13c4360e0f2"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "var form = Ext.create(\"MyApp.view.PlaceDetail\",",
+                    "{",
+                    "    title: record.data.name,",
+                    "    record: record",
+                    "});",
+                    "",
+                    "this.getMainView().push(form);",
+                    "",
+                    "var me = this;",
+                    "",
+                    "Ext.Function.defer(function(){",
+                    "    me.getPlaceList().deselectAll();",
+                    "}, 100);"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#PlaceList"
+            },
+            "designerId": "8e436c99-3992-47fc-a919-be1e3617f78c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onButtonTap",
+                "implHandler": [
+                    "var record = this.getPlaceDetail().getRecord();",
+                    "",
+                    "var map = Ext.create(\"MyApp.view.PlaceMap\", {",
+                    "    title: record.data.name,",
+                    "    mapOptions: {",
+                    "        center: new google.maps.LatLng(record.data.lat, record.data.lng),",
+                    "        zoom: 12",
+                    "    }",
+                    "});",
+                    "",
+                    "this.getMainView().push(map);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "[action=ViewMap]"
+            },
+            "designerId": "cbf92e97-14c8-4354-9fdc-a3ade0e6449b"
+        }
+    ]
+}

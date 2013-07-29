@@ -1,0 +1,49 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "\t{ id: 1, name: \"Alcatraz\", location: \"California\", lat: 37.826641, lng: -122.422855 },",
+            "\t{ id: 2, name: \"Four Corners Monument\", location: \"USA\", lat: 36.999091, lng: -109.045279 },",
+            "\t{ id: 3, name: \"Golden Gate Bridge\", location: \"San Francisco\", lat: 37.816497, lng: -122.478175 },",
+            "\t{ id: 4, name: \"Grand Canyon\", location: \"Arizona\", lat: 36.071302, lng: -111.874237 },",
+            "\t{ id: 5, name: \"Las Vegas\", location: \"Nevada\", lat: 36.113749, lng: -115.173512 },",
+            "\t{ id: 6, name: \"Monument Valley\", location: \"Arizona\", lat: 36.996658, lng: -110.097785 },",
+            "\t{ id: 7, name: \"New York City\", location: \"New York\", lat: 40.726446, lng: -74.006767 },",
+            "\t{ id: 8, name: \"Washington\", location: \"District of Columbia\", lat: 38.895225, lng: -77.036694 },",
+            "\t{ id: 9, name: \"Wine tasting\", location: \"Calistoga, California\", lat: 38.578299, lng: -122.577653 }",
+            "]"
+        ],
+        "model": "Place",
+        "storeId": "Places",
+        "designer|userClassName": "Places"
+    },
+    "designerId": "91a89bf9-7de9-4997-96f5-2ab571e15151",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "9854e37c-0093-44ae-a111-7e15a356b5f9",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "e7302a6c-3f73-4db9-8660-959bcb581ecb"
+                }
+            ]
+        }
+    ]
+}

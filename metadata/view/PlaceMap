@@ -1,0 +1,13 @@
+{
+    "type": "Ext.Map",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "PlaceMap",
+        "designer|userClassName": "PlaceMap"
+    },
+    "designerId": "2e634035-585b-4765-b2de-04e665c19f03"
+}

@@ -1,0 +1,47 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "MainView",
+        "designer|userClassName": "MainView",
+        "designer|initialView": true
+    },
+    "designerId": "e7149b7b-a0eb-4f23-8be5-99f259c4a8f9",
+    "cn": [
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Places to Visit",
+                "id": "PlaceList",
+                "store": "Places"
+            },
+            "designerId": "21e676e7-4afa-426c-9d54-aeb2e995f55c",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div>{name}, {location}</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "607b7e87-e437-4c9b-8649-c8d74b2eb58d"
+                }
+            ]
+        }
+    ]
+}
